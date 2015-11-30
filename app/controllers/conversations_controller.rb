@@ -5,7 +5,7 @@ class ConversationsController < ApplicationController
 
   def create
     if Conversation.between(params[:sender_id], params[:recipient_id]).present?
-      @conversation = Conversation.between(params[:sender_id], params[:recipient_id]).fitst
+      @conversation = Conversation.between(params[:sender_id], params[:recipient_id]).first
     else
       @conversation = Conversation.create!(conversation_params)
     end
@@ -27,6 +27,6 @@ class ConversationsController < ApplicationController
   end
 
   def interlocutor(conversation)
-    current_user == conversation.recipient_id ? conversation.sender : conversation.recipient
+    current_user == conversation.recipient ? conversation.sender : conversation.recipient
   end
 end

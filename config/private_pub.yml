@@ -6,5 +6,5 @@ test:
   secret_token: "secret"
 production:
   server: "https://stark-tundra-4768.herokuapp.com/"
-  secret_token: "53c35653c89cf56e5fc366e40d3ea8617d532e75bced7f97f61907706eaf7e19"
+  secret_token: "vichat"
   signature_expiration: 3600 # one hour

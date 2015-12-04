@@ -5,6 +5,6 @@ test:
   server: "http://localhost:9292/faye"
   secret_token: "secret"
 production:
-  server: "https://stark-tundra-4768.herokuapp.com/"
+  server: "https://stark-tundra-4768.herokuapp.com/faye"
   secret_token: "vichat"
   signature_expiration: 3600 # one hour

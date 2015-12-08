@@ -12,4 +12,4 @@ test:
 production:
   server: "https://stark-tundra-4768.herokuapp.com/faye"
   secret_token: "vichat"
-  signature_expiration: 3600 # one hour
+  signature_expiration: 86400 # one day
